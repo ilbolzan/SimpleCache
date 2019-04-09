@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using SimpleCache.Core;
 using Xunit;
 
@@ -62,6 +63,53 @@ namespace SimpleCache.Test
 
             //Assert
             Assert.False(returnedStatus);
+        }
+
+        [Theory]
+        [InlineData("name", "Bob", 1)]
+        public void Set_WhenSettingValueWithExpiration_ShouldRespectExpirationTime(string key, string value, int expirationSeconds)
+        {
+            //Arrange
+            var db = new SimpleCacheDb();
+
+            //Act
+            db.Set(key, value, expirationSeconds);
+            string returnedValueBeforeExpiration = db.Get(key);
+            Console.WriteLine(returnedValueBeforeExpiration);
+            Thread.Sleep(1000);
+            string returnedValueAfterExpiration = db.Get(key);
+
+            //Assert
+            Assert.Equal(value, returnedValueBeforeExpiration);
+            Assert.Null(returnedValueAfterExpiration);
+        }
+
+        [Theory]
+        [InlineData("nonExistentKey")]
+        public void Get_WhenGettingAKeyThatDoesNotExists_ShouldReturnNull(string key)
+        {
+            //Arrange
+            var db = new SimpleCacheDb();
+
+            //Act
+            string value = db.Get(key);
+
+            //Assert
+            Assert.Null(value);
+        }
+
+        [Theory]
+        [InlineData("nonExistentKey", "1")]
+        public void Incr_WhenIncrementingNonExistentKey_ShouldReturn1(string key, string expectedResult)
+        {
+            //Arrange
+            var db = new SimpleCacheDb();
+
+            //Act
+            string value = db.Incr(key);
+
+            //Assert
+            Assert.Equal(expectedResult, value);
         }
     }
 }
