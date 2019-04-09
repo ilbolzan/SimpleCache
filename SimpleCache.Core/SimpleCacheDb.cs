@@ -7,16 +7,23 @@ namespace SimpleCache.Core
     {
         private ConcurrentDictionary<String,String> _dictionaryDb = new ConcurrentDictionary<String,String>();
 
-        public bool Set(string name, string value)
+        public bool Set(string key, string value)
         {
-            return _dictionaryDb.TryAdd(name, value);
+            return _dictionaryDb.TryAdd(key, value);
         }
 
-        public string Get(string name)
+        public string Get(string key)
         {
             string value;
-            bool exists = _dictionaryDb.TryGetValue(name, out value);
+            bool exists = _dictionaryDb.TryGetValue(key, out value);
             return value; 
+        }
+
+        public bool Del(string key)
+        {
+            string value;
+            bool status = _dictionaryDb.TryRemove(key, out value);
+            return status;
         }
     }
 }
