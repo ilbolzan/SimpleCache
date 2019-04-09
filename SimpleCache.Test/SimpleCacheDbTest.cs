@@ -111,5 +111,37 @@ namespace SimpleCache.Test
             //Assert
             Assert.Equal(expectedResult, value);
         }
+
+        [Theory]
+        [InlineData("score", "1", "2")]
+        [InlineData("score", "2", "3")]
+        public void Incr_WhenIncrementingAnExistentKey_ValueShoudBeIncreasedBy1(string key, string initialValue, string expectedResult)
+        {
+            //Arrange
+            var db = new SimpleCacheDb();
+
+            //Act
+            db.Set(key, initialValue);
+            string increasedValue = db.Incr(key);
+
+            //Assert
+            Assert.Equal(expectedResult, increasedValue);
+        }
+
+        [Fact]
+        public void Incr_WhenIncrementingAKeyWithNonIntegerValue_ShouldThrowAnException()
+        {
+            //Arrange
+            var db = new SimpleCacheDb();
+            var key = "name";
+            var value = "Bob";
+
+            //Act
+            db.Set(key, value);
+            Action action = () => db.Incr(key);
+
+            //Assert
+            Assert.Throws<Exception>(action);
+        }
     }
 }

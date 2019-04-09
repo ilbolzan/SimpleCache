@@ -45,13 +45,16 @@ namespace SimpleCache.Core
         }
 
         public string Incr(string key){
-            string value = this.Get(key);
-            if(value == null)
-            {
-                value = "1";
-                this.Set(key, value);
-            }
-            return value;
+            var newValue = _dictionaryDb.AddOrUpdate(key, new ExpirableValue("1"), (localKey, oldValue) => {
+                var isInteger = int.TryParse(oldValue.Value, out int integerValue);
+                if(!isInteger)
+                {
+                    throw new Exception($"Current value [{oldValue}] for key [{localKey}] is not an Integer");
+                }
+                integerValue++;
+                return new ExpirableValue(integerValue.ToString());
+            });
+            return newValue.Value;
         }
     }
 }
