@@ -1,0 +1,323 @@
+{
+  "SimpleCache.Core.dll": {
+    "C:\\w\\estudos\\simple-cache\\SimpleCache.Core\\ExpirableValue.cs": {
+      "SimpleCache.Core.ExpirableValue": {
+        "System.String SimpleCache.Core.ExpirableValue::get_Value()": {
+          "Lines": {
+            "7": 25
+          },
+          "Branches": []
+        },
+        "System.DateTime SimpleCache.Core.ExpirableValue::get_Expiration()": {
+          "Lines": {
+            "8": 18
+          },
+          "Branches": []
+        },
+        "System.Void SimpleCache.Core.ExpirableValue::.ctor(System.String,System.Int32)": {
+          "Lines": {
+            "10": 2,
+            "11": 1,
+            "12": 1,
+            "13": 1
+          },
+          "Branches": []
+        },
+        "System.Void SimpleCache.Core.ExpirableValue::.ctor(System.String)": {
+          "Lines": {
+            "15": 28,
+            "16": 14,
+            "17": 14,
+            "18": 14
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\w\\estudos\\simple-cache\\SimpleCache.Core\\SimpleCacheDb.cs": {
+      "SimpleCache.Core.SimpleCacheDb": {
+        "System.Boolean SimpleCache.Core.SimpleCacheDb::Set(System.String,System.String)": {
+          "Lines": {
+            "11": 6,
+            "12": 6,
+            "13": 6
+          },
+          "Branches": []
+        },
+        "System.Boolean SimpleCache.Core.SimpleCacheDb::Set(System.String,System.String,System.Int32)": {
+          "Lines": {
+            "16": 1,
+            "17": 1,
+            "18": 1
+          },
+          "Branches": []
+        },
+        "System.String SimpleCache.Core.SimpleCacheDb::Get(System.String)": {
+          "Lines": {
+            "21": 4,
+            "23": 4,
+            "24": 4,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 3,
+            "30": 1,
+            "31": 1,
+            "32": 1,
+            "33": 4,
+            "34": 4
+          },
+          "Branches": [
+            {
+              "Line": 24,
+              "Offset": 26,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 24,
+              "Offset": 26,
+              "EndOffset": 47,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 3
+            },
+            {
+              "Line": 29,
+              "Offset": 53,
+              "EndOffset": 55,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 29,
+              "Offset": 53,
+              "EndOffset": 64,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Boolean SimpleCache.Core.SimpleCacheDb::existsAndIsExpired(System.Boolean,SimpleCache.Core.ExpirableValue)": {
+          "Lines": {
+            "36": 4,
+            "37": 4,
+            "38": 4
+          },
+          "Branches": [
+            {
+              "Line": 37,
+              "Offset": 2,
+              "EndOffset": 4,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 3
+            },
+            {
+              "Line": 37,
+              "Offset": 2,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Boolean SimpleCache.Core.SimpleCacheDb::Del(System.String)": {
+          "Lines": {
+            "41": 3,
+            "43": 3,
+            "44": 3,
+            "45": 3
+          },
+          "Branches": []
+        },
+        "System.String SimpleCache.Core.SimpleCacheDb::Incr(System.String)": {
+          "Lines": {
+            "47": 4,
+            "48": 7,
+            "49": 7,
+            "50": 7,
+            "51": 5,
+            "52": 5,
+            "53": 4,
+            "54": 6,
+            "55": 6,
+            "56": 6,
+            "57": 3,
+            "58": 3
+          },
+          "Branches": [
+            {
+              "Line": 48,
+              "Offset": 24,
+              "EndOffset": 26,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 48,
+              "Offset": 24,
+              "EndOffset": 49,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Void SimpleCache.Core.SimpleCacheDb::.ctor()": {
+          "Lines": {
+            "8": 10
+          },
+          "Branches": []
+        }
+      },
+      "SimpleCache.Core.SimpleCacheDb/<>c": {
+        "SimpleCache.Core.ExpirableValue SimpleCache.Core.SimpleCacheDb/<>c::<Incr>b__6_0(System.String,SimpleCache.Core.ExpirableValue)": {
+          "Lines": {},
+          "Branches": [
+            {
+              "Line": 50,
+              "Offset": 21,
+              "EndOffset": 23,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 50,
+              "Offset": 21,
+              "EndOffset": 42,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  "SimpleCache.Test.dll": {
+    "C:\\Users\\gx2.ilson\\.nuget\\packages\\microsoft.net.test.sdk\\16.0.1\\build\\netcoreapp1.0\\Microsoft.NET.Test.Sdk.Program.cs": {
+      "AutoGeneratedProgram": {
+        "System.Void AutoGeneratedProgram::Main(System.String[])": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\w\\estudos\\simple-cache\\SimpleCache.Test\\SimpleCacheDbTest.cs": {
+      "SimpleCache.Test.SimpleCacheDbTest": {
+        "System.Void SimpleCache.Test.SimpleCacheDbTest::Set_WhenSettingAValue_ShouldReturnTrue(System.String,System.String)": {
+          "Lines": {
+            "13": 1,
+            "15": 1,
+            "18": 1,
+            "21": 1,
+            "22": 1
+          },
+          "Branches": []
+        },
+        "System.Void SimpleCache.Test.SimpleCacheDbTest::Get_WhenSettingValue_ShouldReturTheSameValue(System.String,System.String)": {
+          "Lines": {
+            "27": 1,
+            "29": 1,
+            "32": 1,
+            "33": 1,
+            "36": 1,
+            "37": 1
+          },
+          "Branches": []
+        },
+        "System.Void SimpleCache.Test.SimpleCacheDbTest::Del_WhenDeletingAnExistentValue_ShouldReturTrue(System.String,System.String)": {
+          "Lines": {
+            "42": 1,
+            "44": 1,
+            "47": 1,
+            "48": 1,
+            "51": 1,
+            "52": 1
+          },
+          "Branches": []
+        },
+        "System.Void SimpleCache.Test.SimpleCacheDbTest::Del_WhenDeletingAnNonExistentValue_ShouldReturTrue(System.String)": {
+          "Lines": {
+            "57": 1,
+            "59": 1,
+            "62": 1,
+            "65": 1,
+            "66": 1
+          },
+          "Branches": []
+        },
+        "System.Void SimpleCache.Test.SimpleCacheDbTest::Set_WhenSettingValueWithExpiration_ShouldRespectExpirationTime(System.String,System.String,System.Int32)": {
+          "Lines": {
+            "71": 1,
+            "73": 1,
+            "76": 1,
+            "77": 1,
+            "78": 1,
+            "79": 1,
+            "80": 1,
+            "83": 1,
+            "84": 1,
+            "85": 1
+          },
+          "Branches": []
+        },
+        "System.Void SimpleCache.Test.SimpleCacheDbTest::Get_WhenGettingAKeyThatDoesNotExists_ShouldReturnNull(System.String)": {
+          "Lines": {
+            "90": 1,
+            "92": 1,
+            "95": 1,
+            "98": 1,
+            "99": 1
+          },
+          "Branches": []
+        },
+        "System.Void SimpleCache.Test.SimpleCacheDbTest::Incr_WhenIncrementingNonExistentKey_ShouldReturn1(System.String,System.String)": {
+          "Lines": {
+            "104": 1,
+            "106": 1,
+            "109": 1,
+            "112": 1,
+            "113": 1
+          },
+          "Branches": []
+        },
+        "System.Void SimpleCache.Test.SimpleCacheDbTest::Incr_WhenIncrementingAnExistentKey_ValueShoudBeIncreasedBy1(System.String,System.String,System.String)": {
+          "Lines": {
+            "119": 2,
+            "121": 2,
+            "124": 2,
+            "125": 2,
+            "128": 2,
+            "129": 2
+          },
+          "Branches": []
+        },
+        "System.Void SimpleCache.Test.SimpleCacheDbTest::Incr_WhenIncrementingAKeyWithNonIntegerValue_ShouldThrowAnException()": {
+          "Lines": {
+            "133": 1,
+            "135": 1,
+            "136": 1,
+            "137": 1,
+            "140": 1,
+            "141": 2,
+            "144": 1,
+            "145": 1
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
