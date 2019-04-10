@@ -143,5 +143,20 @@ namespace SimpleCache.Test
             //Assert
             Assert.Throws<Exception>(action);
         }
+
+        // [Fact]
+        // public void Zadd_WhenAddingItem_ShouldReturnTrue(){
+        //     //Arrange
+        //     var db = new SimpleCacheDb();
+        //     var key = "name";
+        //     var score = 1;
+        //     var value = "Bob";
+
+        //     //Act
+        //     bool result = db.Zadd(key, score, value);
+
+        //     //Assert
+        //     Assert.True(result);
+        // }
     }
 }
