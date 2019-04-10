@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SimpleCache.Core\SimpleCache.Core.csproj" />
+    <ProjectReference Include="..\SimpleCache.CLI\SimpleCache.CLI.csproj" />
   </ItemGroup>
 
 </Project>

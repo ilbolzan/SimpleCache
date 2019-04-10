@@ -1,34 +1,105 @@
 {
+  "SimpleCache.CLI.dll": {
+    "C:\\w\\estudos\\simple-cache\\SimpleCache.CLI\\CLIParser.cs": {
+      "SimpleCache.CLI.CLIParser": {
+        "System.String SimpleCache.CLI.CLIParser::Cmd(System.String)": {
+          "Lines": {
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "29": 0,
+            "30": 0
+          },
+          "Branches": [
+            {
+              "Line": 20,
+              "Offset": 41,
+              "EndOffset": 43,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 55,
+              "EndOffset": 59,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 41,
+              "EndOffset": 91,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 55,
+              "EndOffset": 91,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void SimpleCache.CLI.CLIParser::.cctor()": {
+          "Lines": {
+            "8": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.Void SimpleCache.CLI.CLIParser::.ctor()": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
   "SimpleCache.Core.dll": {
     "C:\\w\\estudos\\simple-cache\\SimpleCache.Core\\ExpirableValue.cs": {
       "SimpleCache.Core.ExpirableValue": {
         "System.String SimpleCache.Core.ExpirableValue::get_Value()": {
           "Lines": {
-            "7": 25
+            "7": 0
           },
           "Branches": []
         },
         "System.DateTime SimpleCache.Core.ExpirableValue::get_Expiration()": {
           "Lines": {
-            "8": 18
+            "8": 0
           },
           "Branches": []
         },
         "System.Void SimpleCache.Core.ExpirableValue::.ctor(System.String,System.Int32)": {
           "Lines": {
-            "10": 2,
-            "11": 1,
-            "12": 1,
-            "13": 1
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0
           },
           "Branches": []
         },
         "System.Void SimpleCache.Core.ExpirableValue::.ctor(System.String)": {
           "Lines": {
-            "15": 28,
-            "16": 14,
-            "17": 14,
-            "18": 14
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0
           },
           "Branches": []
         }
@@ -38,167 +109,240 @@
       "SimpleCache.Core.SimpleCacheDb": {
         "System.Boolean SimpleCache.Core.SimpleCacheDb::Set(System.String,System.String)": {
           "Lines": {
-            "11": 6,
-            "12": 6,
-            "13": 6
+            "13": 0,
+            "14": 0,
+            "15": 0
           },
           "Branches": []
         },
         "System.Boolean SimpleCache.Core.SimpleCacheDb::Set(System.String,System.String,System.Int32)": {
           "Lines": {
-            "16": 1,
-            "17": 1,
-            "18": 1
+            "18": 0,
+            "19": 0,
+            "20": 0
           },
           "Branches": []
         },
         "System.String SimpleCache.Core.SimpleCacheDb::Get(System.String)": {
           "Lines": {
-            "21": 4,
-            "23": 4,
-            "24": 4,
-            "25": 1,
-            "26": 1,
-            "27": 1,
-            "28": 1,
-            "29": 3,
-            "30": 1,
-            "31": 1,
-            "32": 1,
-            "33": 4,
-            "34": 4
+            "23": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0
           },
           "Branches": [
             {
-              "Line": 24,
+              "Line": 26,
               "Offset": 26,
               "EndOffset": 28,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 1
+              "Hits": 0
             },
             {
-              "Line": 24,
+              "Line": 26,
               "Offset": 26,
               "EndOffset": 47,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 3
+              "Hits": 0
             },
             {
-              "Line": 29,
+              "Line": 31,
               "Offset": 53,
               "EndOffset": 55,
               "Path": 0,
               "Ordinal": 2,
-              "Hits": 1
+              "Hits": 0
             },
             {
-              "Line": 29,
+              "Line": 31,
               "Offset": 53,
               "EndOffset": 64,
               "Path": 1,
               "Ordinal": 3,
-              "Hits": 4
+              "Hits": 0
             }
           ]
         },
         "System.Boolean SimpleCache.Core.SimpleCacheDb::existsAndIsExpired(System.Boolean,SimpleCache.Core.ExpirableValue)": {
           "Lines": {
-            "36": 4,
-            "37": 4,
-            "38": 4
+            "38": 0,
+            "39": 0,
+            "40": 0
           },
           "Branches": [
             {
-              "Line": 37,
+              "Line": 39,
               "Offset": 2,
               "EndOffset": 4,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 3
+              "Hits": 0
             },
             {
-              "Line": 37,
+              "Line": 39,
               "Offset": 2,
               "EndOffset": 22,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 1
+              "Hits": 0
             }
           ]
         },
         "System.Boolean SimpleCache.Core.SimpleCacheDb::Del(System.String)": {
           "Lines": {
-            "41": 3,
-            "43": 3,
-            "44": 3,
-            "45": 3
+            "43": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0
           },
           "Branches": []
         },
         "System.String SimpleCache.Core.SimpleCacheDb::Incr(System.String)": {
           "Lines": {
-            "47": 4,
-            "48": 7,
-            "49": 7,
-            "50": 7,
-            "51": 5,
-            "52": 5,
-            "53": 4,
-            "54": 6,
-            "55": 6,
-            "56": 6,
-            "57": 3,
-            "58": 3
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0
           },
           "Branches": [
             {
-              "Line": 48,
+              "Line": 50,
               "Offset": 24,
               "EndOffset": 26,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 1
+              "Hits": 0
             },
             {
-              "Line": 48,
+              "Line": 50,
               "Offset": 24,
               "EndOffset": 49,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 4
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Boolean SimpleCache.Core.SimpleCacheDb::Zadd(System.String,System.Int32,System.String)": {
+          "Lines": {
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 SimpleCache.Core.SimpleCacheDb::Zcard(System.String)": {
+          "Lines": {
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "78": 0,
+            "79": 0
+          },
+          "Branches": [
+            {
+              "Line": 74,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 74,
+              "Offset": 19,
+              "EndOffset": 33,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
             }
           ]
         },
         "System.Void SimpleCache.Core.SimpleCacheDb::.ctor()": {
           "Lines": {
-            "8": 10
+            "9": 0,
+            "10": 0
           },
           "Branches": []
         }
       },
       "SimpleCache.Core.SimpleCacheDb/<>c": {
-        "SimpleCache.Core.ExpirableValue SimpleCache.Core.SimpleCacheDb/<>c::<Incr>b__6_0(System.String,SimpleCache.Core.ExpirableValue)": {
+        "SimpleCache.Core.ExpirableValue SimpleCache.Core.SimpleCacheDb/<>c::<Incr>b__7_0(System.String,SimpleCache.Core.ExpirableValue)": {
           "Lines": {},
           "Branches": [
             {
-              "Line": 50,
+              "Line": 52,
               "Offset": 21,
               "EndOffset": 23,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 1
+              "Hits": 0
             },
             {
-              "Line": 50,
+              "Line": 52,
               "Offset": 21,
               "EndOffset": 42,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 2
+              "Hits": 0
             }
           ]
+        }
+      }
+    },
+    "C:\\w\\estudos\\simple-cache\\SimpleCache.Core\\SortedSetFactory.cs": {
+      "SimpleCache.Core.SortedSetFactory": {
+        "System.Collections.Generic.SortedSet`1<System.Collections.Generic.KeyValuePair`2<System.Int32,System.String>> SimpleCache.Core.SortedSetFactory::GetSet(System.Int32,System.String)": {
+          "Lines": {
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.KeyValuePair`2<System.Int32,System.String> SimpleCache.Core.SortedSetFactory::GetItem(System.Int32,System.String)": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      },
+      "SimpleCache.Core.ByScore": {
+        "System.Int32 SimpleCache.Core.ByScore::Compare(System.Collections.Generic.KeyValuePair`2<System.Int32,System.String>,System.Collections.Generic.KeyValuePair`2<System.Int32,System.String>)": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
         }
       }
     }
@@ -214,106 +358,146 @@
         }
       }
     },
+    "C:\\w\\estudos\\simple-cache\\SimpleCache.Test\\SimpleCacheCLITest.cs": {
+      "SimpleCache.Test.SimpleCacheCLITest": {
+        "System.Void SimpleCache.Test.SimpleCacheCLITest::Set_WhenSettingAValue_ShouldReturnTrue()": {
+          "Lines": {
+            "11": 0,
+            "13": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    },
     "C:\\w\\estudos\\simple-cache\\SimpleCache.Test\\SimpleCacheDbTest.cs": {
       "SimpleCache.Test.SimpleCacheDbTest": {
         "System.Void SimpleCache.Test.SimpleCacheDbTest::Set_WhenSettingAValue_ShouldReturnTrue(System.String,System.String)": {
           "Lines": {
-            "13": 1,
-            "15": 1,
-            "18": 1,
-            "21": 1,
-            "22": 1
+            "13": 0,
+            "15": 0,
+            "18": 0,
+            "21": 0,
+            "22": 0
           },
           "Branches": []
         },
         "System.Void SimpleCache.Test.SimpleCacheDbTest::Get_WhenSettingValue_ShouldReturTheSameValue(System.String,System.String)": {
           "Lines": {
-            "27": 1,
-            "29": 1,
-            "32": 1,
-            "33": 1,
-            "36": 1,
-            "37": 1
+            "27": 0,
+            "29": 0,
+            "32": 0,
+            "33": 0,
+            "36": 0,
+            "37": 0
           },
           "Branches": []
         },
         "System.Void SimpleCache.Test.SimpleCacheDbTest::Del_WhenDeletingAnExistentValue_ShouldReturTrue(System.String,System.String)": {
           "Lines": {
-            "42": 1,
-            "44": 1,
-            "47": 1,
-            "48": 1,
-            "51": 1,
-            "52": 1
+            "42": 0,
+            "44": 0,
+            "47": 0,
+            "48": 0,
+            "51": 0,
+            "52": 0
           },
           "Branches": []
         },
         "System.Void SimpleCache.Test.SimpleCacheDbTest::Del_WhenDeletingAnNonExistentValue_ShouldReturTrue(System.String)": {
           "Lines": {
-            "57": 1,
-            "59": 1,
-            "62": 1,
-            "65": 1,
-            "66": 1
+            "57": 0,
+            "59": 0,
+            "62": 0,
+            "65": 0,
+            "66": 0
           },
           "Branches": []
         },
         "System.Void SimpleCache.Test.SimpleCacheDbTest::Set_WhenSettingValueWithExpiration_ShouldRespectExpirationTime(System.String,System.String,System.Int32)": {
           "Lines": {
-            "71": 1,
-            "73": 1,
-            "76": 1,
-            "77": 1,
-            "78": 1,
-            "79": 1,
-            "80": 1,
-            "83": 1,
-            "84": 1,
-            "85": 1
+            "71": 0,
+            "73": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0
           },
           "Branches": []
         },
         "System.Void SimpleCache.Test.SimpleCacheDbTest::Get_WhenGettingAKeyThatDoesNotExists_ShouldReturnNull(System.String)": {
           "Lines": {
-            "90": 1,
-            "92": 1,
-            "95": 1,
-            "98": 1,
-            "99": 1
+            "90": 0,
+            "92": 0,
+            "95": 0,
+            "98": 0,
+            "99": 0
           },
           "Branches": []
         },
         "System.Void SimpleCache.Test.SimpleCacheDbTest::Incr_WhenIncrementingNonExistentKey_ShouldReturn1(System.String,System.String)": {
           "Lines": {
-            "104": 1,
-            "106": 1,
-            "109": 1,
-            "112": 1,
-            "113": 1
+            "104": 0,
+            "106": 0,
+            "109": 0,
+            "112": 0,
+            "113": 0
           },
           "Branches": []
         },
         "System.Void SimpleCache.Test.SimpleCacheDbTest::Incr_WhenIncrementingAnExistentKey_ValueShoudBeIncreasedBy1(System.String,System.String,System.String)": {
           "Lines": {
-            "119": 2,
-            "121": 2,
-            "124": 2,
-            "125": 2,
-            "128": 2,
-            "129": 2
+            "119": 0,
+            "121": 0,
+            "124": 0,
+            "125": 0,
+            "128": 0,
+            "129": 0
           },
           "Branches": []
         },
         "System.Void SimpleCache.Test.SimpleCacheDbTest::Incr_WhenIncrementingAKeyWithNonIntegerValue_ShouldThrowAnException()": {
           "Lines": {
-            "133": 1,
-            "135": 1,
-            "136": 1,
-            "137": 1,
-            "140": 1,
-            "141": 2,
-            "144": 1,
-            "145": 1
+            "133": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "140": 0,
+            "141": 0,
+            "144": 0,
+            "145": 0
+          },
+          "Branches": []
+        },
+        "System.Void SimpleCache.Test.SimpleCacheDbTest::Zadd_WhenAddingItem_ShouldReturnTrue()": {
+          "Lines": {
+            "148": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "156": 0,
+            "159": 0,
+            "160": 0
+          },
+          "Branches": []
+        },
+        "System.Void SimpleCache.Test.SimpleCacheDbTest::Zcard_WhenAddingThreeMembersForTheSameKey_ShouldReturnThree()": {
+          "Lines": {
+            "164": 0,
+            "166": 0,
+            "167": 0,
+            "170": 0,
+            "171": 0,
+            "172": 0,
+            "174": 0,
+            "177": 0,
+            "178": 0
           },
           "Branches": []
         }

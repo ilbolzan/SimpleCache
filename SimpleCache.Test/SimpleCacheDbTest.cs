@@ -144,19 +144,55 @@ namespace SimpleCache.Test
             Assert.Throws<Exception>(action);
         }
 
+        [Fact]
+        public void Zadd_WhenAddingItem_ShouldReturnTrue(){
+            //Arrange
+            var db = new SimpleCacheDb();
+            var key = "name";
+            var score = 1;
+            var value = "Bob";
+
+            //Act
+            bool result = db.Zadd(key, score, value);
+
+            //Assert
+            Assert.True(result);
+        }
+
+        [Fact]
+        public void Zcard_WhenAddingThreeMembersForTheSameKey_ShouldReturnThree()
+        {
+            //Arrange
+            var db = new SimpleCacheDb();
+            var key = "students";
+
+            //Act
+            db.Zadd(key, 15, "Bob");
+            db.Zadd(key, 20, "Thomas");
+            db.Zadd(key, 15, "Robert");
+
+            var cardinality = db.Zcard(key);
+
+            //Assert
+            Assert.Equal(3, cardinality);
+        }
+
         // [Fact]
-        // public void Zadd_WhenAddingItem_ShouldReturnTrue(){
+        // public void Zrank_WhenAddingThreeMembersForTheSameKey_ShouldShowRankOrderedByScore()
+        // {
         //     //Arrange
         //     var db = new SimpleCacheDb();
-        //     var key = "name";
-        //     var score = 1;
-        //     var value = "Bob";
+        //     var key = "students";
 
         //     //Act
-        //     bool result = db.Zadd(key, score, value);
+        //     db.Zadd(key, 1, "Bob");
+        //     db.Zadd(key, 3, "Thomas");
+        //     db.Zadd(key, 2, "Robert");
+
+        //     var rank = db.Zrank(key, "Robert");
 
         //     //Assert
-        //     Assert.True(result);
+        //     Assert.Equal(1, rank);
         // }
     }
 }
